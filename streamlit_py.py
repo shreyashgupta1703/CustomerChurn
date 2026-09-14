@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+st.set_page_config(page_title="Customer Churn Prediction", page_icon="📊")
+st.title("📊 Customer Churn Prediction")
+st.caption("Enter customer details to estimate churn probability.")
+
 # Load trained model artifacts
 model = joblib.load("model.pkl")
 scaler = joblib.load("scaler.pkl")
