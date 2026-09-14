@@ -94,3 +94,5 @@ Customer churn datasets can contain demographic and behavioral patterns that may
 ## Notes
 
 The trained prediction pipeline and Streamlit interface are kept together so the preprocessing steps used during training can be reused when making predictions.
+
+For reproducibility, keep the preprocessing and feature-column order consistent between model training and the Streamlit prediction flow.
