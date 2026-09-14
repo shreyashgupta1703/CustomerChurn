@@ -90,3 +90,7 @@ Predictions should be treated as decision-support signals rather than the sole b
 ## Data and Ethics
 
 Customer churn datasets can contain demographic and behavioral patterns that may introduce bias. Predictions should therefore be interpreted with appropriate business context and human oversight.
+
+## Notes
+
+The trained prediction pipeline and Streamlit interface are kept together so the preprocessing steps used during training can be reused when making predictions.
