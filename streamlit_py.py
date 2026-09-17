@@ -57,5 +57,6 @@ if st.button("Predict Churn"):
     prediction = model.predict(scaled_input)[0]
     proba = model.predict_proba(scaled_input)[0][1]
 
-    st.success(f"Prediction: {'Churn' if prediction == 1 else 'No Churn'}")
-    st.info(f"Churn Probability: {proba:.2f}")
+    prediction_label = "Churn" if prediction == 1 else "No Churn"
+    st.success(f"Prediction: {prediction_label}")
+    st.info(f"Churn Probability: {proba:.2%}")
